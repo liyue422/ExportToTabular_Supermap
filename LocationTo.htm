@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>地图定位（LocationTo）</title>
+<link rel="stylesheet" type="text/css" href="img/SuperMapHelp.css" />
+</head>
+
+<body>
+<div class="logoStyle">
+	<div class="topicTitle">地图定位（LocationTo）</div></div>
+<h3>插件简介：</h3>
+<p>在当前地图窗口中进行定位显示，根据用户输入的坐标点，定位到地图上相应的位置，同时，当前地图窗口中的地图将以该定位点为显示中心点，并对地图进行放大显示。</p>
+<h3>关键控件/对象/接口：</h3>
+<table class="cmTable" cellspacing="0" width="75%">
+    <thead>
+      <TR>
+        <td width="33%">控件/对象/接口</td>
+		  <td width="33%">属性</td>
+	    <td width="34%">方法</td></TR>
+  </thead>
+  <tbody>
+      <tr>
+        <td>Plugin</td>
+        <td>&nbsp;</td>
+        <td>Initialize()、ExitInstance()</td>
+      </tr>
+      <tr>
+        <td>CtrlAction</td>
+        <td>FormClass</td>
+        <td>Run()</td>
+      </tr>
+      <tr>
+        <td>Application</td>
+        <td>ActiveApplication、Output、MainForm</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>IFormMain</td>
+        <td>FormManager</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>IFormManager</td>
+        <td>ActiveForm</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>IFormMap</td>
+        <td>MapControl</td>
+        <td>&nbsp;</td>
+      </tr>
+    <tr>
+      <td>MapControl</td>
+        <td>Map</td>
+        <td>Refresh()</td>
+    </tr>
+    <tr>
+      <td>Map</td>
+        <td>TrackingLayer、Center、Scale</td>
+        <td>Refresh()</td>
+    </tr>
+    <tr>
+      <td>TrackingLayer</td>
+        <td>&nbsp;</td>
+        <td>Add()</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h3>使用步骤:</h3>
+<ol type="1">
+	<li>Microsoft Visual Studio 2008 打开安装目录\SampleCode\LocationTo\目录下的解决方案：LocationTo.sln，对解决方案中的工程项目重新进行编译；</li>
+	<li>成功编译后生成两个文件，分别为：SuperMap.Desktop.LocationTo.dll 和 SuperMap.Desktop.LocationTo.config，并且其输出路径分别为：安装目录\Bin\Plugins\LocationTo\ 、安装目录\WorkEnvironment\Default\；</li>
+	<li>将安装目录\SampleCode\目录下的 SampleIcons 文件夹拷贝到安装目录\Resources\目录下，该文件夹中提供了所有示范程序使用的图标文件，如果已经将 SampleIcons 文件夹拷贝到了安装目录\Resources\目录下，可以略过此步骤；</li>
+	<li>启动 SuperMap Deskpro .NET 6R；</li>
+	<li>打开工作空间：安装目录\SampleData\World\World.smwu，同时，打开工作空间中的名为”世界地图_Day“的地图，在功能区上将出现本示范程序提供的“地图定位”选项卡及“定位到”功能控件；</li>
+	<table class="picTable">
+		<tr>
+		<td><img src="img/LocationTo1.png" /></td>
+		</tr>
+	</table>
+	<li>点击功能区&gt;“地图定位”选项卡&gt;“地图定位”组&gt;“定位到”按钮，打开“定位到”对话框；</li>
+	<li>在“定位到”对话框中输入要定位的坐标，这里设置： X=116，Y=39，点击“定位”按钮；</li>
+	<li>当前地图窗口中以特殊的点符号显示定位点的位置，并且，闪烁显示该点符号，同时，当前地图窗口中的地图将以定位点为中心点进行放大显示。</li>
+	<table class="picTable">
+		<tr>
+		<td><img src="img/LocationTo2.png" /></td>
+		</tr>
+	</table>
+</ol>
+<h3>使用数据：</h3>
+<p>安装目录\SampleData\World\World.smwu。</p>
+<h3>备注说明：</h3>
+<p>当成功编译 LocationTo.sln 解决方案中的工程项目后，编译生成的 SuperMap.Desktop.LocationTo.dll 和 SuperMap.Desktop.LocationTo.config 文件分别
+自动拷贝到“安装目录\Bin\Plugins\LocationTo\”、“安装目录\WorkEnvironment\Default\”目录下，使应用程序启动后可以加载示范
+程序所开发的插件，因此，示范程序只需成功编译一次，用户就可以在 SuperMap Deskpro .NET 6R 中使用插件的功能；</p>
+<p>如果用户想从 SuperMap Deskpro .NET 6R 中移除该插件功能，只需将“安装目录\WorkEnvironment\Default\”目录下
+的 SuperMap.Desktop.LocationTo.config 文件删除即可；如果用户想再次使用该插件功能时，可以再次编译该示范程序或者将 LocationTo.sln 解决方案中的 SuperMap.Desktop.LocationTo.config 文件直接拷贝到“安装目录\WorkEnvironment\Default\”目录下即可。</p>
+
+<hr align="center" />
+<div align="right">
+	<table width="96%">
+		<tr>
+			<td align="right"><p class="contentLink"><a target="_blank" 
+														 href="http://www.supermap.com.cn"><font 
+			 color="#004080">版权所有© 2007-2013 北京超图软件股份有限公司。保留所有权利。</font></a></p></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>
