@@ -12,8 +12,8 @@ namespace SuperMap.Desktop.ExportToTabular
 {
     class _CtrlActionExportToTabular:CtrlAction 
     {  
-        public _CtrlActionExportToTabular(IBaseItem caller,IForm formclass)
-            :base (caller,formclass)
+        public _CtrlActionExportToTabular(IBaseItem caller)
+            :base (caller)
         {
         
         }

@@ -83,30 +83,20 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SuperMap.Data, Version=6.0.0.0, Culture=neutral, PublicKeyToken=0635c574ea890381, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\SuperMap\SuperMap iDesktop 9D\Bin\SuperMap.Data.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="SuperMap.Data">
+      <HintPath>E:\Supermap\iDesktop\10.0.0-39781\Bin\SuperMap.Data.dll</HintPath>
     </Reference>
-    <Reference Include="SuperMap.Desktop.Core, Version=6.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\SuperMap\SuperMap iDesktop 9D\Bin\SuperMap.Desktop.Core.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="SuperMap.Desktop.Core">
+      <HintPath>E:\Supermap\iDesktop\10.0.0-39781\Bin\SuperMap.Desktop.Core.dll</HintPath>
     </Reference>
-    <Reference Include="SuperMap.Desktop.UI.Controls, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cd7dcc384397b6e, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\SuperMap\SuperMap iDesktop 9D\Bin\SuperMap.Desktop.UI.Controls.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="SuperMap.Desktop.UI.Controls">
+      <HintPath>E:\Supermap\iDesktop\10.0.0-39781\Bin\SuperMap.Desktop.UI.Controls.dll</HintPath>
     </Reference>
-    <Reference Include="SuperMap.Mapping, Version=6.0.0.0, Culture=neutral, PublicKeyToken=0635c574ea890381, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\SuperMap\SuperMap iDesktop 9D\Bin\SuperMap.Mapping.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="SuperMap.Mapping">
+      <HintPath>E:\Supermap\iDesktop\10.0.0-39781\Bin\SuperMap.Mapping.dll</HintPath>
     </Reference>
-    <Reference Include="SuperMap.UI.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=0635c574ea890381, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\SuperMap\SuperMap iDesktop 9D\Bin\SuperMap.UI.Controls.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="SuperMap.UI.Controls">
+      <HintPath>E:\Supermap\iDesktop\10.0.0-39781\Bin\SuperMap.UI.Controls.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -160,6 +150,9 @@
       <DependentUpon>_frmExportToTabular.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
