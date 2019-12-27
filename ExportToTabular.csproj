@@ -163,7 +163,7 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
+    <PostBuildEvent>echo f | xcopy "$(ProjectDir)SuperMap.Desktop.ExportToTabular.config" "E:\Supermap\iDesktop\10.0.0-39781\WorkEnvironment\Default\SuperMap.Desktop.ExportToTabular.config" /y
+echo f | xcopy "$(TargetPath)" "E:\Supermap\iDesktop\10.0.0-39781\Bin\Plugins\$(ProjectName)\$(ProjectName).dll" /y</PostBuildEvent>
   </PropertyGroup>
 </Project>
