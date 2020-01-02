@@ -44,11 +44,10 @@
             // 
             // btnExportTo
             // 
-            this.btnExportTo.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnExportTo.Location = new System.Drawing.Point(517, 569);
-            this.btnExportTo.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExportTo.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnExportTo.Location = new System.Drawing.Point(345, 379);
             this.btnExportTo.Name = "btnExportTo";
-            this.btnExportTo.Size = new System.Drawing.Size(89, 38);
+            this.btnExportTo.Size = new System.Drawing.Size(59, 25);
             this.btnExportTo.TabIndex = 0;
             this.btnExportTo.Text = "确定";
             this.btnExportTo.UseVisualStyleBackColor = true;
@@ -57,30 +56,29 @@
             // lblX
             // 
             this.lblX.AutoSize = true;
-            this.lblX.Font = new System.Drawing.Font("宋体", 11F);
-            this.lblX.Location = new System.Drawing.Point(407, 29);
-            this.lblX.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblX.Font = new System.Drawing.Font("SimSun", 11F);
+            this.lblX.Location = new System.Drawing.Point(271, 19);
             this.lblX.Name = "lblX";
-            this.lblX.Size = new System.Drawing.Size(131, 22);
+            this.lblX.Size = new System.Drawing.Size(90, 15);
             this.lblX.TabIndex = 1;
             this.lblX.Text = "输出数据源:";
             // 
             // cmbDatasource1
             // 
             this.cmbDatasource1.FormattingEnabled = true;
-            this.cmbDatasource1.Location = new System.Drawing.Point(542, 28);
+            this.cmbDatasource1.Location = new System.Drawing.Point(361, 19);
+            this.cmbDatasource1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbDatasource1.Name = "cmbDatasource1";
-            this.cmbDatasource1.Size = new System.Drawing.Size(190, 26);
+            this.cmbDatasource1.Size = new System.Drawing.Size(128, 20);
             this.cmbDatasource1.TabIndex = 5;
             this.cmbDatasource1.Click += new System.EventHandler(this.cmbDatasource1_Click);
             // 
             // btnExit
             // 
-            this.btnExit.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnExit.Location = new System.Drawing.Point(641, 569);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExit.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnExit.Location = new System.Drawing.Point(427, 379);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(89, 38);
+            this.btnExit.Size = new System.Drawing.Size(59, 25);
             this.btnExit.TabIndex = 7;
             this.btnExit.Text = "取消";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -89,33 +87,34 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 11F);
-            this.label1.Location = new System.Drawing.Point(40, 28);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Font = new System.Drawing.Font("SimSun", 11F);
+            this.label1.Location = new System.Drawing.Point(27, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 22);
+            this.label1.Size = new System.Drawing.Size(90, 15);
             this.label1.TabIndex = 8;
             this.label1.Text = "输入数据源:";
             // 
             // cmbDatasource
             // 
             this.cmbDatasource.FormattingEnabled = true;
-            this.cmbDatasource.Location = new System.Drawing.Point(175, 27);
+            this.cmbDatasource.Location = new System.Drawing.Point(117, 18);
+            this.cmbDatasource.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbDatasource.Name = "cmbDatasource";
-            this.cmbDatasource.Size = new System.Drawing.Size(192, 26);
+            this.cmbDatasource.Size = new System.Drawing.Size(129, 20);
             this.cmbDatasource.TabIndex = 9;
-            //this.cmbDatasource.SelectedIndexChanged += new System.EventHandler(this.cmbDatasource_SelectedIndexChanged);
+            this.cmbDatasource.SelectedIndexChanged += new System.EventHandler(this.cmbDatasource_SelectedIndexChanged);
             this.cmbDatasource.Click += new System.EventHandler(this.cmbDatasource_Click);
             // 
             // lbDataset
             // 
-            this.lbDataset.Font = new System.Drawing.Font("宋体", 9F);
+            this.lbDataset.Font = new System.Drawing.Font("SimSun", 9F);
             this.lbDataset.FormattingEnabled = true;
-            this.lbDataset.ItemHeight = 18;
-            this.lbDataset.Location = new System.Drawing.Point(22, 41);
+            this.lbDataset.ItemHeight = 12;
+            this.lbDataset.Location = new System.Drawing.Point(15, 27);
+            this.lbDataset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lbDataset.Name = "lbDataset";
             this.lbDataset.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.lbDataset.Size = new System.Drawing.Size(298, 400);
+            this.lbDataset.Size = new System.Drawing.Size(200, 268);
             this.lbDataset.TabIndex = 10;
             // 
             // groupBox1
@@ -124,19 +123,22 @@
             this.groupBox1.Controls.Add(this.btnRightMove);
             this.groupBox1.Controls.Add(this.lbInsert);
             this.groupBox1.Controls.Add(this.lbDataset);
-            this.groupBox1.Font = new System.Drawing.Font("宋体", 11F);
-            this.groupBox1.Location = new System.Drawing.Point(32, 78);
+            this.groupBox1.Font = new System.Drawing.Font("SimSun", 11F);
+            this.groupBox1.Location = new System.Drawing.Point(21, 52);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(735, 472);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(490, 315);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "数据集选择";
             // 
             // btnLeftMove
             // 
-            this.btnLeftMove.Location = new System.Drawing.Point(353, 234);
+            this.btnLeftMove.Location = new System.Drawing.Point(235, 156);
+            this.btnLeftMove.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLeftMove.Name = "btnLeftMove";
-            this.btnLeftMove.Size = new System.Drawing.Size(45, 41);
+            this.btnLeftMove.Size = new System.Drawing.Size(30, 27);
             this.btnLeftMove.TabIndex = 13;
             this.btnLeftMove.Text = "<";
             this.btnLeftMove.UseVisualStyleBackColor = true;
@@ -144,9 +146,10 @@
             // 
             // btnRightMove
             // 
-            this.btnRightMove.Location = new System.Drawing.Point(353, 152);
+            this.btnRightMove.Location = new System.Drawing.Point(235, 101);
+            this.btnRightMove.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRightMove.Name = "btnRightMove";
-            this.btnRightMove.Size = new System.Drawing.Size(45, 41);
+            this.btnRightMove.Size = new System.Drawing.Size(30, 27);
             this.btnRightMove.TabIndex = 12;
             this.btnRightMove.Text = ">";
             this.btnRightMove.UseVisualStyleBackColor = true;
@@ -154,20 +157,21 @@
             // 
             // lbInsert
             // 
-            this.lbInsert.Font = new System.Drawing.Font("宋体", 9F);
+            this.lbInsert.Font = new System.Drawing.Font("SimSun", 9F);
             this.lbInsert.FormattingEnabled = true;
-            this.lbInsert.ItemHeight = 18;
-            this.lbInsert.Location = new System.Drawing.Point(422, 40);
+            this.lbInsert.ItemHeight = 12;
+            this.lbInsert.Location = new System.Drawing.Point(281, 27);
+            this.lbInsert.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lbInsert.Name = "lbInsert";
             this.lbInsert.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.lbInsert.Size = new System.Drawing.Size(298, 400);
+            this.lbInsert.Size = new System.Drawing.Size(200, 268);
             this.lbInsert.TabIndex = 11;
             // 
             // _frmExportToTabular
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 629);
+            this.ClientSize = new System.Drawing.Size(533, 419);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cmbDatasource);
             this.Controls.Add(this.label1);
@@ -176,7 +180,6 @@
             this.Controls.Add(this.lblX);
             this.Controls.Add(this.btnExportTo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "_frmExportToTabular";
