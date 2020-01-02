@@ -215,11 +215,11 @@ namespace SuperMap.Desktop.ExportToTabular
                         if(layerName == objDss[j].Datasets[m].Name)
                         {
 
-                            //判断输出数据源中是否已经存在某一数据集对应的“_prop”属性表，若已存在，先删除原来的属性表数据
+                            //判断输出数据源中是否已经存在需转换数据集对应的“_prop”属性表，若已存在，先删除原来的属性表数据
                             if (Array.IndexOf(objLayerName, layerName + "_prop") != -1)
                             {
                                 objDss[cmbDatasource1.Text].Datasets.Delete(layerName + "_prop");
-                                Application.ActiveApplication.Output.Output("原有的“" + layerName + "_prop" + "”图层已删除，等待重新生成！");
+                                Application.ActiveApplication.Output.Output("原“" + layerName + "_prop" + "”图层已删除，等待重新生成！");
                             }
                             
                             
